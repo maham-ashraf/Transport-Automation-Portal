@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>University Transport Automation Portal</title>
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="app"></div>
+
+  <div id="modalBackdrop" class="modal-backdrop hidden">
+    <div class="modal">
+      <div class="modal-head">
+        <h3 id="modalTitle">Details</h3>
+        <button id="closeModalBtn" class="icon-btn" aria-label="Close modal">x</button>
+      </div>
+      <div id="modalBody" class="modal-body"></div>
+    </div>
+  </div>
+
+  <div id="registrationBackdrop" class="modal-backdrop hidden">
+    <div class="modal registration-modal">
+      <div class="modal-head">
+        <h3>Student Registration Form</h3>
+        <button id="closeRegistrationBtn" class="icon-btn" aria-label="Close modal">x</button>
+      </div>
+      <div id="registrationBody" class="modal-body registration-body"></div>
+    </div>
+  </div>
+
+  
+
+  <div id="notifDrawerBackdrop" class="drawer-backdrop hidden">
+    <div class="drawer">
+      <div class="drawer-head">
+        <h3><i class="fas fa-bell"></i> Notifications</h3>
+        <button id="closeNotifDrawerBtn" class="icon-btn">×</button>
+      </div>
+      <div id="notifDrawerBody" class="drawer-body"></div>
+      <div class="drawer-footer">
+         <button id="viewAllNotifsBtn" class="btn-soft full-width">View Full History</button>
+      </div>
+    </div>
+  </div>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

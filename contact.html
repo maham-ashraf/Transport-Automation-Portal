@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - University Transport Automation Portal</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="landing">
+        <header class="landing-header">
+            <a href="index.html" class="landing-brand" style="text-decoration:none; color:inherit; display:flex; gap:10px; align-items:center;">
+                <img class="brand-logo" src="download.jfif" alt="Superior University logo" />
+                <div>
+                    <h1>Superior University Faisalabad</h1>
+                    <p>University Transport Automation Portal</p>
+                </div>
+            </a>
+            <nav class="landing-nav">
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About Transport</a>
+                <a href="index.html#transport-book">Transport book</a>
+                <a href="index.html#routes">Routes</a>
+                <a href="index.html#features">Features</a>
+                <a href="contact.html" class="active">Contact</a>
+                <a href="index.html" class="btn-primary nav-login-btn" style="text-decoration: none; display: inline-block; padding: 0.6rem 1.2rem; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: all 0.2s ease;">Login</a>
+            </nav>
+        </header>
+
+        <section class="landing-section two-col">
+            <div class="section-content">
+                <h2>Contact Us</h2>
+                <p>Get in touch with the University Transport Automation Portal team for any inquiries or assistance.</p>
+                
+                <div class="contact-info">
+                    <h3>Transport Office Contact</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Location</strong>
+                            <p>Superior University Faisalabad<br>Main Campus, Faisalabad<br>Punjab, Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Phone Numbers</strong>
+                            <p>Office: +92-41-1234567<br>Mobile: +92-41-7654321<br>Emergency: +92-300-1234567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email Addresses</strong>
+                            <p>Transport: transport@superior.edu.pk<br>Info: info@superior.edu.pk<br>Support: support@superior.edu.pk</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Office Hours</strong>
+                            <p>Monday - Friday: 9:00 AM – 4:00 PM<br>Saturday: 9:00 AM – 1:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-user-tie"></i>
+                        <div>
+                            <strong>Transport Manager</strong>
+                            <p>Mr. Ahmed Hassan<br>Extension: 123<br>Email: transport.manager@superior.edu.pk</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-headset"></i>
+                        <div>
+                            <strong>Helpline</strong>
+                            <p>Student Helpline: 111-SUPER-1<br>Parent Helpline: 111-SUPER-2<br>WhatsApp: +92-300-1234567</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-form">
+                <h3>Send us a Message</h3>
+                <form id="contactForm" onsubmit="handleContactSubmit(event)">
+                    <div class="form-group">
+                        <label for="contactName">Your Name *</label>
+                        <input type="text" id="contactName" name="name" required placeholder="Enter your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="contactEmail">Your Email *</label>
+                        <input type="email" id="contactEmail" name="email" required placeholder="Enter your email address">
+                    </div>
+                    <div class="form-group">
+                        <label for="contactPhone">Phone Number</label>
+                        <input type="tel" id="contactPhone" name="phone" placeholder="Enter your phone number">
+                    </div>
+                    <div class="form-group">
+                        <label for="contactSubject">Subject *</label>
+                        <input type="text" id="contactSubject" name="subject" required placeholder="Enter message subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="contactMessage">Message *</label>
+                        <textarea id="contactMessage" name="message" required rows="5" placeholder="Write your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary full-width">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <section class="landing-section">
+            <h2>Additional Contact Information</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3><i class="fas fa-bus"></i> Bus Operations</h3>
+                    <p><strong>Bus Incharge:</strong> Mr. Muhammad Ali<br>
+                    <strong>Phone:</strong> +92-41-1234568<br>
+                    <strong>Email:</strong> bus.incharge@superior.edu.pk</p>
+                </div>
+                <div class="feature-card">
+                    <h3><i class="fas fa-route"></i> Route Information</h3>
+                    <p><strong>Route Coordinator:</strong> Mrs. Sara Khan<br>
+                    <strong>Phone:</strong> +92-41-1234569<br>
+                    <strong>Email:</strong> routes@superior.edu.pk</p>
+                </div>
+                <div class="feature-card">
+                    <h3><i class="fas fa-credit-card"></i> Fee & Payments</h3>
+                    <p><strong>Accounts Officer:</strong> Mr. Usman Ahmed<br>
+                    <strong>Phone:</strong> +92-41-1234570<br>
+                    <strong>Email:</strong> fees.transport@superior.edu.pk</p>
+                </div>
+                <div class="feature-card">
+                    <h3><i class="fas fa-clipboard-check"></i> Student Services</h3>
+                    <p><strong>Student Coordinator:</strong> Ms. Fatima Zahra<br>
+                    <strong>Phone:</strong> +92-41-1234571<br>
+                    <strong>Email:</strong> student.services@superior.edu.pk</p>
+                </div>
+            </div>
+        </section>
+
+      <!-- FAQ Section moved to home page -->
+
+        <footer class="landing-footer" id="footer-contact">
+            <div class="footer-main">
+                <div class="footer-col footer-brand-block">
+                    <strong class="footer-title">Superior University Faisalabad</strong>
+                    <span class="footer-sub">University Transport Automation Portal</span>
+                </div>
+                <div class="footer-col footer-transport-block">
+                    <span class="footer-block-heading">Transport Office Contact</span>
+                    <span class="footer-transport-line"><strong>Transport Office</strong></span>
+                    <span class="footer-transport-line">Superior University Faisalabad</span>
+                    <span class="footer-transport-line"><strong>Phone:</strong> +92-41-1234567</span>
+                    <span class="footer-transport-line"><strong>Email:</strong> <a class="footer-link" href="mailto:transport@superior.edu.pk">transport@superior.edu.pk</a></span>
+                    <span class="footer-transport-line"><strong>Office Hours:</strong> 9 AM – 4 PM</span>
+                </div>
+                <div class="footer-col footer-social-block">
+                    <span class="footer-follow">Follow us</span>
+                    <div class="footer-social-icons">
+                        <a class="social-icon social-instagram" href="#" target="_blank" rel="noopener noreferrer" aria-label="Superior University Faisalabad on Instagram">
+                            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a class="social-icon social-facebook" href="#" target="_blank" rel="noopener noreferrer" aria-label="Superior University Faisalabad on Facebook">
+                            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a class="social-icon social-youtube" href="#" target="_blank" rel="noopener noreferrer" aria-label="Superior University Faisalabad on YouTube">
+                            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                        <a class="social-icon social-linkedin" href="#" target="_blank" rel="noopener noreferrer" aria-label="Superior University Faisalabad on LinkedIn">
+                            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.475-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a class="social-icon social-twitter" href="#" target="_blank" rel="noopener noreferrer" aria-label="Superior University Faisalabad on Twitter">
+                            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bar">© 2026 Superior University Faisalabad · All rights reserved</div>
+        </footer>
+    </div>
+
+    <div id="toastContainer" class="toast-container"></div>
+
+    <script>
+        function handleContactSubmit(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const phone = formData.get('phone');
+            const subject = formData.get('subject');
+            const message = formData.get('message');
+            
+            // Show success message
+            showToast(`Thank you ${name}! Your message has been sent successfully. We'll get back to you soon.`, 'success');
+            
+            // Clear the form
+            event.target.reset();
+            
+            // Log the message (in a real app, this would be sent to a server)
+            console.log('Contact Form Submission:', { name, email, phone, subject, message, timestamp: new Date().toISOString() });
+            
+            return false;
+        }
+
+        function showToast(message, type = 'info') {
+            const toastContainer = document.getElementById('toastContainer');
+            const toast = document.createElement('div');
+            toast.className = `toast toast-${type}`;
+            toast.innerHTML = `
+                <div class="toast-content">
+                    <i class="fas ${type === 'success' ? 'fa-check-circle' : type === 'error' ? 'fa-exclamation-circle' : 'fa-info-circle'}"></i>
+                    <span>${message}</span>
+                </div>
+                <button class="toast-close" onclick="this.parentElement.remove()">
+                    <i class="fas fa-times"></i>
+                </button>
+            `;
+            
+            toastContainer.appendChild(toast);
+            
+            // Auto remove after 5 seconds
+            setTimeout(() => {
+                if (toast.parentElement) {
+                    toast.remove();
+                }
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
